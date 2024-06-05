@@ -18,7 +18,8 @@ export default function About() {
       >
         {" "}
         <Navbar />
-        <div className=" my-20 flex flex-col justify-center items-center">
+        <div className=" flex flex-col px-2 my-32 justify-center items-center">
+
           <p className="text-center text-white text-[60px] font-roboto font-bold">
             About Us
           </p>
@@ -28,7 +29,7 @@ export default function About() {
         </div>
       </div>
       
-        <div className="flex flex-col   lg:flex-row justify-center items-center my-20 gap-14 px-16 ">
+        <div className="flex flex-col   lg:flex-row justify-center items-center my-20 gap-14 px-2 ">
           <div className="lg:max-w-[600px] gap-3">
             <h1 className="text-[#444] text-[28px] font-roboto ">
               AABS Mission
@@ -72,7 +73,7 @@ export default function About() {
         }}
       ></div>
      
-        <div className="flex lg:flex-row flex-col  justify-center items-center gap-3 px-5 my-12">
+        <div className="flex lg:flex-row flex-col  justify-center items-center gap-3 px-4 my-12">
           <div className="flex flex-col px-4 py-3 lg:max-w-[500px] shadow-custom-light bg-white">
             <div className="flex flex-row items-center gap-3">
               <Image
@@ -89,7 +90,7 @@ export default function About() {
               dicta sunt explicabo.
             </p>
           </div>
-          <div className="flex flex-col px-4 py-3  lg:max-w-[500px] shadow-custom-light bg-white">
+          <div className="flex flex-col px-4 py-3   lg:max-w-[500px] shadow-custom-light bg-white">
             <div className="flex flex-row items-center gap-3">
               <Image
                 src="/5c167fe0dab57656ff77b7b3_icon-9.svg"
@@ -122,7 +123,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className=" h-[189px]  bg-[#f1f1f1]   flex flex-col justify-center items-center text-center ">
+        <div className=" h-[189px] px-2  bg-[#f1f1f1]   flex flex-col justify-center items-center text-center ">
           <h1 className="text-[#043063] text-4xl font-roboto font-bold">
             Get on our side today!
           </h1>

@@ -11,39 +11,47 @@ export default function Home() {
   return (
     <>
       <div
-        className="h-[100vh]"
+        className="h-[100vh] "
         style={{
           backgroundImage: "url('/banner4.png')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
       >
-        <Navbar />
-        <div className="my-3 gap-2 flex flex-col justify-center items-center">
-          <p className="text-center text-white text-[40px] font-roboto font-bold md:text-[60px]">
+        <Navbar  />
+        <div className="items-center flex flex-col    justify-center">
+        <div className="flex-col   flex">
+          <p className=" py-8 text-white text-center text-[30px] font-roboto font-bold md:text-[60px]">
             Professional Business Solutions
           </p>
-          <p className="text-white text-sm md:text-[26px] font-roboto">
+          <p className="text-white text-[18px] text-center  md:text-[26px] font-roboto px-2">
             Let our consultants relieve your business pains from IT to branding
           </p>
         </div>
-        <div className="flex flex-row my-2 gap-2 justify-center items-center pt-2s">
-          <button className="p-3 border-white border-[1px] rounded-[3px] text-white uppercase">
-            Services
-          </button>
-          <button className="border border-primary-red bg-red-600 p-3 uppercase">
-            Free Quote
-          </button>
+        <div className="flex-row my-6 gap-2  flex">
+        <button
+          type="submit"
+          className="w-full border-[2px] border-white text-white py-2 px-4 rounded-md "
+        >
+          Services
+        </button>
+         <button
+          type="submit"
+          className="w-full bg-[#c50f42] text-white py-2 px-4 rounded-md "
+        >
+          Free Quote
+        </button>
+        </div>
         </div>
        
       </div>
 
       
-        <div className="my-12 ">
+        <div className="my-12  ">
           <h1 className="text-center text-2xl font-roboto font-bold">AABS Services</h1>
         </div>
 
-        <div className=" flex flex-col lg:flex-row justify-center items-center gap-9 my-10">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-9 my-10 ">
           <div className="bg-white mx-3 shadow-custom-light lg:max-w-[359px]  border-r-4 flex flex-col gap-3 py-6 px-3 justify-center items-center transition-transform duration-300 ease-in-out transform hover:scale-110">
             <div className="relative h-[140px] w-[205px]">
               <Image
@@ -62,13 +70,14 @@ export default function Home() {
               mi quis viverra ornare.
             </p>
           </div>
-          <div className=" lg:max-w-[359px] mx-3  bg-white shadow-custom-light border-r-4 flex px-3 flex-col gap-3 py-6 justify-center items-center transition-transform duration-300 ease-in-out transform hover:scale-110">
+          <div className=" lg:max-w-[359px] mx-3   bg-white shadow-custom-light border-r-4 flex px-3 flex-col gap-3 py-6 justify-center items-center transition-transform duration-300 ease-in-out transform hover:scale-110">
             <div className="relative min-h-[140px] w-[205px]">
               <Image
                 src="/banner2.png"
                 layout="fill"
                 objectFit="contain"
                 alt="Web Design and Development"
+              
               />
             </div>
             <p className="text-[20px] text-center font-semibold font-roboto">
@@ -99,16 +108,16 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <button className="border border-primary-red hover:bg-[#c50f42] px-6 py-1 rounded-[3px] text-center">
             View More
           </button>
         </div>
        
-        <p className="text-center py-24 text-4xl font-bold text-[#444]">
+        <p className="text-center py-24 lg:text-4xl text-2xl font-bold text-[#444]">
           Professional Client Reviews
         </p>
-        <div className="flex flex-col lg:flex-row gap-7 px-3 lg:justify-center">
+        <div className="flex flex-col lg:flex-row gap-7 px-3 lg:justify-center ">
           {[...Array(4)].map((_, index) => (
             <div
               key={index}
@@ -142,14 +151,14 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <div className="my-14 flex justify-center py-2">
+        <div className="my-14  text-center py-2">
           <button className="border border-primary-red text-center hover:bg-[#c50f42] px-2 py-2">
             View More Reviews
           </button>
         </div>
-        <div className="flex  pl-[2%] pr-[2%]  items-center md:pl-[300px] py-[20px] w-full  gap-16 bg-[#f4f6f8]  uppercase " style={{backgroundImage:"URL('/3dimage.png')",backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
-          <div className=" w-[400px]  ">
-            <div className="mb-5">
+        <div className="flex relative    pl-[2%] pr-[2%]  items-center 2xl:justify-center  py-[20px] w-full  gap-16 bg-[#f4f6f8]  uppercase " style={{backgroundImage:"URL('/3dimage.png')",backgroundRepeat:'no-repeat',backgroundSize:'cover'}}>
+          <div className="w-[500px]  animate-trans-right    ">
+            <div className="mb-5 ">
               <h1 className="text-[30px] text-[#444] font-bold ">
                 Why Businesses Choose Us
               </h1>

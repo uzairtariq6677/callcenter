@@ -13,8 +13,8 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="max-w-7xl mx-auto ">
-        <div className="max-w-[1149px] h-[49px]  pt-10 pb-10 justify-around mx-auto  border-b border-[#333] shadow-sm items-center  flex flex-row">
+      <div className="max-w-7xl mx-auto  ">
+        <div className="max-w-[1149px]  h-[49px]  pt-10 pb-10 justify-around mx-auto  border-b border-[#333] shadow-sm items-center  flex flex-row">
           <div className="flex flex-row gap-5 text-white">
             <button className=" border-[1px] text-[14px] border-primary-red text-sm  px-[5px] py-[5px] font-roboto ">
               Client Access
@@ -41,21 +41,21 @@ const Navbar = () => {
           </div>
           {/* // for large screen */}
           <div className=" flex-row gap-5 hidden md:block">
-            <ul className="flex flex-row gap-4 text-white text-[14px] uppercase mt-3">
-              <Link href="/" className="hover:text-[#c50f42]">
+            <ul className="flex flex-row gap-4 text-white text-[14px] uppercase">
+              <Link href="/" className="hover:text-[#c50f42] mt-2">
                 HOME
               </Link>
-              <Link href="/about" className="hover:text-[#c50f42]">
+              <Link href="/about" className="hover:text-[#c50f42]  mt-2">
                 ABOUT
               </Link>
-              <Link href="/services" className="hover:text-[#c50f42]">
+              <Link href="/services" className="hover:text-[#c50f42]  mt-2">
                 SERVICES
               </Link>
-              <Link href="/contact" className="hover:text-[#c50f42]">
+              <Link href="/contact" className="hover:text-[#c50f42]  mt-2">
                 CONTACT
               </Link>
               <Link href="/contact">
-                <button className="bg-[#c50f42] items-center px-3">
+                <button className="bg-[#c50f42] items-center px-3 py-2">
                   GET A FREE QUOTE
                 </button>
               </Link>

@@ -12,27 +12,28 @@ const Footer = () => {
   // return
   return (
     
-    <div className="bg-[#04254a] "  style={{
+    <div className="bg-[#04254a]"  style={{
       backgroundImage: "url('/bgimage.png')",
       backgroundRepeat: "no-repeat",
       backgroundSize: "contain",
-      backgroundPosition:"50% 0px"
+      backgroundPosition:"50% 0px",
+     
     }}>
-      <div className="max-w-7xl mx-auto p-4 pt-[150px] mt-10 ">
-        <div className=" max-w-[1149px]  mx-auto">
-          <div className="flex flex-row h-[82px] border-b border-[#333] pb-3  items-center  justify-between">
+      <div className="max-w-7xl  mx-auto p-4 pt-[150px] mt-10  ">
+       
+          <div className="flex flex-row h-[82px]  border-b border-[#333] pb-3  items-center  justify-between">
             <div>
               <Image src="/logo.png" width={200} height={82} />
             </div>
             <div className="flex flex-row gap-3">
-              <FaFacebookF className="border border-red-500 bg-red-500 " />
-              <FaTwitter className="border border-red-500 bg-red-500 " />
-              <FaSquareInstagram className="border border-red-500 bg-red-500 " />
+              <FaFacebookF className="border border-red-500 bg-[#c50f42]  " />
+              <FaTwitter className="border border-red-500 bg-[#c50f42] " />
+              <FaSquareInstagram className="border border-red-500 bg-[#c50f42]" />
             </div>
            
           </div>
-          <div className="flex flex-col md:flex-row justify-between mt-8 pb-12 border-b border-[#333] ">
-            <div className="flex flex-col lg:flex-row gap-3 w-[648px] text-white">
+          <div className=" flex flex-col  lg:flex-row  flex-wrap justify-between mt-8 pb-12 border-b border-[#333] ">
+            <div className="flex flex-col  lg:flex-row gap-3 text-white md:max-w-[767px]">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -62,8 +63,8 @@ const Footer = () => {
             </div>
             
           </div>
-          <div className="flex flex-col md:flex-row gap-3 text-center items-center text-white justify-between mt-3">
-              <div className="flex flex-row gap-3">
+          <div className="flex flex-col lg:flex-row gap-3 text-center items-center text-white justify-between mt-3">
+              <div className="flex md:flex-row flex-col gap-3">
                 <Link href=''>Legal</Link>
                 <Link href=''>Privacy Policy</Link>
                 <Link href=''>Terms of Use</Link>
@@ -73,7 +74,7 @@ const Footer = () => {
               </div>
               <div><p>Copyright © 2016 All American Business Solutions Inc. All rights reserved.</p></div>
             </div>
-        </div>
+       
       </div>
     </div>
   );
